@@ -1,0 +1,33 @@
+import java.util.Scanner;
+//main class lets see where this goes
+public class Main{
+	public static void main(String args[]){
+		System.out.println("welcome to infinitarium");
+		System.out.println("here we study the infinities");
+		System.out.println("Who might you be?....");
+		Scanner myScanner = new Scanner(System.in);
+		String userName = myScanner.nextLine();
+		Character player = new Character(userName);
+		System.out.print(player.name);
+	}
+}
+//character class should handle all user actions during gameplay
+class Character{
+	String name;
+	byte health;
+	byte stamina;
+	byte mana;
+	byte strength;
+	byte intelligence;
+	byte endurance;
+	
+	public Character(String uname){
+		name = uname;
+		health = 10;
+		stamina = 10;
+		mana = 10;
+		strength = 10;
+		intelligence = 10;
+		endurance = 10;
+	}	 
+}
